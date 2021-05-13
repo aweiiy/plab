@@ -102,8 +102,7 @@ class UsersController extends Controller
     {
         $request->validate([
             'name' => 'required|alpha',
-            'email' => 'required|email',
-            'password' => 'required'
+            'email' => 'required|email'
         ]);
         $request['password'] = Hash::make($request->password);
         $user = User::findOrFail($id);
