@@ -21,7 +21,7 @@
             @endif
 
             <div class="table-responsive">
-                <table class="table table-bordered table-striped">
+                <table id="users" class="table table-bordered table-striped">
                     <thead>
                     <tr>
                         <th>ID</th>
@@ -49,6 +49,9 @@
                     @endforeach
                     </tbody>
                 </table>
+                @section('extra-script')
+                    {{Html::script('js/components/users.js')}}
+                @endsection
             </div>
         </div>
     </div>
