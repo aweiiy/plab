@@ -29,10 +29,6 @@
                     <a class="navbar-brand" href="{{ url('/') }}">
                         <img alt="{{ config('app.name', 'plab') }}" src="{{ asset('img/logo.png') }}" height="100">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                             aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
@@ -47,7 +43,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('/developers') }}">Developers</a>
                             </li>
-                        </ul></div>
+                        </ul>
+                    </div>
                     <div>
                     <ul class="navbar-nav ml-auto mt-10">
                             @guest
@@ -71,16 +68,16 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}</a>
                                 </li>
-                        </ul>
+                            @endguest
+                            </ul>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
-                                    </div>
-                            @endguest
-                </nav>
-                    </div>
             </div>
+            </nav>
         </div>
+    </div>
+    </div>
 </section>
 
 <section class="page-title">
