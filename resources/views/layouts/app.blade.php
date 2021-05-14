@@ -10,8 +10,6 @@
     <meta name="author" content="">
     <title>{{ config('app.name','Plab review site') }}</title>
 
-    <!-- Favicon -->
-    <link href="" rel="shortcut icon">
     <!-- Bootstrap -->
     <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Font Awesome -->
@@ -32,7 +30,7 @@
                         <img alt="{{ config('app.name', 'plab') }}" src="{{ asset('img/logo.png') }}" height="100">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -73,13 +71,13 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}</a>
                                 </li>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    @csrf
-                                </form>
                         </ul>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
                                     </div>
                             @endguest
-
+                </nav>
                     </div>
             </div>
         </div>

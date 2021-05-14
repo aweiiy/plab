@@ -33,10 +33,10 @@
                                                      document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}</a>
                     </li>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
             </ul>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
     </nav>
     <!-- /.navbar -->
 
