@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="games, store, cheap">
-    <meta name="description" content="In this game store you can buy various games.">
+    <meta name="description" content="In this game store you can review various games.">
     <meta name="author" content="">
     <title>{{ config('app.name', 'plab') }}</title>
 
@@ -81,10 +81,8 @@
                             @endguest
 
                     </div>
-                </nav>
             </div>
         </div>
-    </div>
 </section>
 
 <section class="page-title">
