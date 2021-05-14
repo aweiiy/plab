@@ -5,6 +5,7 @@ sudo apt-get install php-xml
 sudo chmod -R 755 plab/  
 sudo chmod -R o+w plab/storage  
 composer install  
+create .env file  
 php artisan key:generate  
 php artisan cache:clear  
 {Create database}  
