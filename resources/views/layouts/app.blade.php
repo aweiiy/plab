@@ -8,7 +8,7 @@
     <meta name="keywords" content="games, store, cheap">
     <meta name="description" content="In this game store you can review various games.">
     <meta name="author" content="">
-    <title>{{ config('app.name', 'plab') }}</title>
+    <title>{{ config('app.name','Plab review site') }}</title>
 
     <!-- Favicon -->
     <link href="" rel="shortcut icon">

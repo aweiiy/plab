@@ -24,6 +24,9 @@
             </li>
         </ul>
             <ul class="navbar-nav ml-auto mt-10">
+                <li class="nav-item">
+                    <a class="nav-link login-button" href="/">Back to main page</a>
+                </li>
                     <li class="nav-item">
                         <a class="nav-link login-button" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
@@ -40,8 +43,8 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="{{ url('/admin') }}" class="brand-link">
-            <img src="/img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <a href="{{ url('/admin') }}" class="brand-link elevation-3">
+            <img src="/img/logo.png" alt="Plab Logo" class="brand-image">
             <span class="brand-text font-weight-light">PLAB admin panel</span>
         </a>
 
@@ -50,7 +53,7 @@
             <!-- Sidebar user (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
-                    <img src="/img/avatar2.png" class="img-circle elevation-2" alt="User Image">
+                    <img src="/img/avatar.png" class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
                     <a href="/admin" class="d-block">

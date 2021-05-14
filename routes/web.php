@@ -25,7 +25,7 @@ Route::get('/games/{id}/edit', [App\Http\Controllers\GamesController::class, 'ed
 Route::post('/games/{id}/', [App\Http\Controllers\GamesController::class, 'store']);
 Route::delete('/games/{id}', [App\Http\Controllers\GamesController::class, 'destroy']);
 Route::patch('/games/{id}', [App\Http\Controllers\GamesController::class, 'update']);
-Route::view('/developers', 'user/developers');
+Route::view('/developers', 'pages/developers');
 
 
 
