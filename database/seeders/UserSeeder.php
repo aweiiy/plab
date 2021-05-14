@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
+    {   //passwords are weak, but this is just for the assigment and faster log in
         DB::table('users')->insert([
             'name' => 'admin',
             'email' => 'admin@gmail.com',
