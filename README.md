@@ -4,6 +4,8 @@ git clone --single-branch --branch master https://github.com/aweiiy/plab.git
 sudo apt-get install php-xml  
 sudo chmod -R 755 plab/  
 sudo chmod -R o+w plab/storage  
+sudo apt install wget php-cli php-zip unzip  
+cd plab  
 composer install  
 {create .env file}  
 php artisan key:generate  
